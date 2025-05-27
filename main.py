@@ -11,14 +11,20 @@ while menu:
     print(" ")
 
     if ch == "1" :
-        print("For end press ctrl+c \n")
+        want = input("Are you want to infinity calculator?[y/n] ")
         print("Operators: \n"
         "+ - plus\n"
         "- - minus\n"
         "* - multiplication\n"
         "/ - division\n"
         "** - raising to a power")
-        while True: print(eval(input('>>>'))) #copied from browser
+        if want == "y" :
+            print("For end press ctrl+c \n")
+            while True: print(eval(input('>>>')))
+        elif want == "n" :
+             print(eval(input('>>>')))
+        else :
+            print("Error in y/n")
     elif ch == "2" :
         chnum = int(input("Enter an integier: ")) 
         if chnum%2 == 0 :
