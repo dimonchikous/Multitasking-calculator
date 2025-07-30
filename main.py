@@ -6,6 +6,7 @@ while menu:
         "2| Even or Odd \n"
         "3| Time-to-time \n" 
         "4| Factorial \n"
+        "5| Physics \n"
         "0| About program")
     ch = input("Do your choose(num): ")
     print(" ")
@@ -144,6 +145,38 @@ while menu:
             
     elif ch == "4" :
         print('Factorial:',eval(str([i for i in range(1,int(input('number -> '))+1)]).replace(', ','*')[1:-1]))
+    elif ch == "5" :
+        print("-SubMenu-\n"
+              "!Physic!\n")
+        print("1| Speed, distance, time")
+        chp = input("Do your choose(num): ")
+        if chp == "1" :
+            print("~Speed, distance, time")
+            print("1| Speed\n"
+                  "2| Distance\n"
+                  "3| Time")
+            chp1 = input("Do your choose: ")
+            if chp1 == "1" :
+                print("=Speed=")
+                s = float(input("Enter a distance(meter): "))
+                t = float(input("Enter a time(seconds): "))
+                v = s/t
+                print("Speed equals " + str(v) + " m/s")
+            elif chp1 == "2" :
+                print("=Distance=")
+                v = float(input("Enter a speed(m/s): "))
+                t = float(input("Enter a time(seconds): "))
+                s = v*t
+                print("Distance equals " + str(s) + " meters")
+            elif chp1 == "3" :
+                print("=Time=")
+                v = float(input("Enter a speed(m/s): "))
+                s = float(input("Enter a distance(meters): "))
+                t = s/v
+                print("Time equals " + str(t) + " seconds")
+            else :
+                print("Error")
+
     elif ch == "0" :
         print(" |About program| \n"
             "   Version: 1.1 \n"
