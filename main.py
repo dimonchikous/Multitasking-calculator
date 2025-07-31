@@ -179,10 +179,9 @@ while menu:
 
     elif ch == "0" :
         print(" |About program| \n"
-            "   Version: 1.1 \n"
+            "   Version: pre1.2 \n"
             "   Changes: \n"
-            "   Added: Time-to-time\n"
-            "   Moved: Time-to-milliseconds moved to Time-to-time\n"
+            "   Added: Physic\n"
             "   Creator: Dimonchikous")
     else :
         print("Error")
