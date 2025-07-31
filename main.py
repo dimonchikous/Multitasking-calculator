@@ -148,7 +148,8 @@ while menu:
     elif ch == "5" :
         print("-SubMenu-\n"
               "!Physic!\n")
-        print("1| Speed, distance, time")
+        print("1| Speed, distance, time\n"
+              "2| Speed converter")
         chp = input("Do your choose(num): ")
         if chp == "1" :
             print("~Speed, distance, time")
@@ -176,12 +177,43 @@ while menu:
                 print("Time equals " + str(t) + " seconds")
             else :
                 print("Error")
+        elif chp == "2" :
+            print("~Speed converter~")
+            print("1|Knot to m/s\n"
+                  "2|m/s to Knot\n"
+                  "3|k/h to m/s\n"
+                  "4|m/s to k/h")
+            chp2 = input("Do your choose: ")
+            if chp2 == "1" :
+                print("=Knot to m/s=")
+                knot = float(input("Enter a knot: "))
+                v = knot/1.944
+                print("Knot to m/s is equal " + str(v))
+            elif chp2 == "2" :
+                print("=m/s to knot=")
+                v = float(input("Enter a speed(m/s): "))
+                knot = v*1.944
+                print("m/s to knot is equal " + str(knot))
+            elif chp2 == "3" :
+                print("=k/h to m/s=")
+                kv = float(input("Enter a k/h: "))
+                v = kv/3.6
+                print("k/h to m/s is equal: " + str(v))
+            elif chp2 == "4" :
+                print("=m/s to k/h=")
+                v = float(input("Enter a m/s: "))
+                kv = v*3.6
+                print("m/s to k/h is equal: " + str(kv))
+            else :
+                print("Error")
+        else :
+            print("Error")
 
     elif ch == "0" :
         print(" |About program| \n"
-            "   Version: pre1.2 \n"
+            "   Version: 1.2 \n"
             "   Changes: \n"
-            "   Added: Physic\n"
+            "   Added: Speed converter(Physic)\n"
             "   Creator: Dimonchikous")
     else :
         print("Error")
