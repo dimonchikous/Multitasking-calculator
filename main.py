@@ -7,6 +7,7 @@ while menu:
         "3| Time-to-time \n" 
         "4| Factorial \n"
         "5| Physics \n"
+        "6| Data converter \n"
         "0| About program")
     ch = input("Do your choose(num): ")
     print(" ")
@@ -208,12 +209,49 @@ while menu:
                 print("Error")
         else :
             print("Error")
+    elif ch == "6" :
+        print("-Submenu-")
+        print("ATTENTION! DATA IS COUNTING FOR 1024 BYTES IN 1 KB")
+        print("!Data converter!")
+        print("1| Bytes converter") 
+        chd = input("Do your choose: ")
+        if chd == "1" :
+            print("!Bytes converter!")
+            print("1|B to GB\n"
+                  "2|B to MB\n"
+                  "3|B to kB\n"
+                  "4|B to bits")
+            chd1 = input("Do your choose: ")
+            if chd1 == "1" :
+                print("=byte to Gb=")
+                byte = float(input("Bytes = "))
+                gigabyte = byte/1073741824
+                print("Bytes to GB = " + str(gigabyte))
+            elif chd1 == "2" :
+                print("=byte to MB=")
+                byte = float(input("Bytes = "))
+                megabyte = (byte/1024)/1024
+                print("Bytes to MB = " + str(megabyte))
+            elif chd1 == "3" :
+                print("=byte to kB")
+                byte = float(input("Bytes = "))
+                kilobytes = byte/1024
+                print("Bytes to kB = " +str(kilobytes))
+            elif chd1 == "4" :
+                print("=byte to bits=")
+                byte = float(input("Bytes = "))
+                bits = byte*8
+                print("Bytes to bits = " +str(bits))
+            else :
+                print("ERROR")
+        else :
+            print("ERROR")
 
     elif ch == "0" :
         print(" |About program| \n"
-            "   Version: 1.2 \n"
+            "   Version:pre1.3 \n"
             "   Changes: \n"
-            "   Added: Speed converter(Physic)\n"
+            "   Added: Data converter\n"
             "   Creator: Dimonchikous")
     else :
         print("Error")
