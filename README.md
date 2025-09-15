@@ -7,7 +7,7 @@ Multitasking-calculator is my first project. It is designed to reduce browser se
 ## How to install and use
 
 To use you need to install python or python3.
-So, you need to install simpleeval or launch with virtual environment)
+So, you need to install simpleeval, you can install it to virtual environment)
 
 ### Installing
 ```bash
@@ -16,13 +16,7 @@ cd Multitasking-calculator
 ```
 
 ### Using
-
-#### If you installed simpleeval or activated venv
 ```bash
 python3 main.py
 ```
 
-#### If simpleeval not installed and venv not activated
-```bash
-./venv/bin/python3 main.py
-```
