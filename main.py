@@ -1,3 +1,4 @@
+from simpleeval import simple_eval
 menu = True
 while menu: 
     print("Welcome to multitasking calculator!")
@@ -5,9 +6,8 @@ while menu:
     print("1| Calculator \n"
         "2| Even or Odd \n"
         "3| Time-to-time \n" 
-        "4| Factorial \n"
-        "5| Physics \n"
-        "6| Data converter \n"
+        "4| Physics \n"
+        "5| Data converter \n"
         "0| About program")
     ch = input("Do your choose(num): ")
     print(" ")
@@ -22,9 +22,9 @@ while menu:
         "** - raising to a power")
         if want == "y" :
             print("For end press ctrl+c \n")
-            while True: print(eval(input('>>>')))
+            while True: print(simple_eval(input('>>>')))
         elif want == "n" :
-             print(eval(input('>>>')))
+             print(simple_eval(input('>>>')))
         else :
             print("Error in y/n")
     elif ch == "2" :
@@ -145,8 +145,6 @@ while menu:
                 print("Error")
             
     elif ch == "4" :
-        print('Factorial:',eval(str([i for i in range(1,int(input('number -> '))+1)]).replace(', ','*')[1:-1]))
-    elif ch == "5" :
         print("-SubMenu-\n"
               "!Physic!\n")
         print("1| Speed, distance, time\n"
@@ -209,34 +207,34 @@ while menu:
                 print("Error")
         else :
             print("Error")
-    elif ch == "6" :
+    elif ch == "5" :
         print("-Submenu-")
-        print("ATTENTION! DATA IS COUNTING FOR 1024 BYTES IN 1 KB")
+        print("ATTENTION! DATA IS IN 1024(kib)")
         print("!Data converter!")
         print("1| Bytes converter") 
         chd = input("Do your choose: ")
         if chd == "1" :
             print("!Bytes converter!")
-            print("1|B to GB\n"
-                  "2|B to MB\n"
-                  "3|B to kB\n"
+            print("1|B to GiB\n"
+                  "2|B to MiB\n"
+                  "3|B to kiB\n"
                   "4|B to bits")
             chd1 = input("Do your choose: ")
             if chd1 == "1" :
-                print("=byte to Gb=")
+                print("=byte to Gib=")
                 byte = float(input("Bytes = "))
                 gigabyte = byte/1073741824
-                print("Bytes to GB = " + str(gigabyte))
+                print("Bytes to GiB = " + str(gigabyte))
             elif chd1 == "2" :
-                print("=byte to MB=")
+                print("=byte to MiB=")
                 byte = float(input("Bytes = "))
                 megabyte = (byte/1024)/1024
-                print("Bytes to MB = " + str(megabyte))
+                print("Bytes to MiB = " + str(megabyte))
             elif chd1 == "3" :
-                print("=byte to kB")
+                print("=byte to kiB")
                 byte = float(input("Bytes = "))
                 kilobytes = byte/1024
-                print("Bytes to kB = " +str(kilobytes))
+                print("Bytes to kiB = " +str(kilobytes))
             elif chd1 == "4" :
                 print("=byte to bits=")
                 byte = float(input("Bytes = "))
@@ -249,9 +247,11 @@ while menu:
 
     elif ch == "0" :
         print(" |About program| \n"
-            "   Version:pre1.3 \n"
+            "   Version:pre-2-1.3 \n"
             "   Changes: \n"
-            "   Added: Data converter\n"
+            "   Changed:\n"
+            "   1.Eval deleted\n"
+            "   2.Factorial deleted(temporarily)\n"
             "   Creator: Dimonchikous")
     else :
         print("Error")
