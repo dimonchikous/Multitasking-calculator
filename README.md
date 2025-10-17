@@ -6,7 +6,7 @@ Multitasking-calculator is my first project. It is designed to reduce browser se
 
 ## How to install and use
 
-To use you need to install python or python3.
+To use you need to install python with version 3.10.
 So, you need to install simpleeval, you can install it to virtual environment)
 
 ### Installing
