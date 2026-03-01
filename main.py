@@ -58,7 +58,7 @@ while menu:
                         case "1" :
                             print("Seconds-to-milliseconds is " + str(time*1000)+ " milliseconds")
                         case "2" :
-                            print("Minutes-to-milliseconds is " + str(time*6000)+ " milliseconds")
+                            print("Minutes-to-milliseconds is " + str(time*60000)+ " milliseconds")
                         case "3" :
                             print("Hours-to-milliseconds is " + str(time*3600000)+ " milliseconds")
                         case "4" :
