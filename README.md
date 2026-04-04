@@ -1,6 +1,8 @@
 # Warning! 
 
-Its too old project. Ignore 1 update, it was made after lazy code reviev. Code is too dirty and bad. ** Now project is archived. **
+Its too old project. Ignore 1 update, it was made after lazy code reviev. Code is too dirty and bad. 
+
+**Now project is archived.**
 
 # Multitasking-calculator
 
