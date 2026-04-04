@@ -1,3 +1,7 @@
+# Warning! 
+
+Its too old project. Ignore 1 update, it was made after lazy code reviev. Code is too dirty and bad. ** Now project is archived. **
+
 # Multitasking-calculator
 
 Multitasking-calculator is my first project. It is designed to reduce browser searches for calculating tasks. This version includes a calculator, even/odd checker, time-to-time converter, factorial computation, physics submenu and data converter.
